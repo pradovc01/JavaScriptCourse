@@ -1,0 +1,80 @@
+body{
+	font: normal 12px/1.6em Arial, Helvetica, sans-serif;
+	color: #203845;
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 900px;
+	border-left: 1px solid #f0e9eb;
+	border-right: 1px solid #f0e9eb;
+	position: absolute;
+	left:10px;
+}
+
+header {
+	width: 900px;
+	height: 90px;
+	margin: 0 1px;
+	background: url('css/headerImage.jpg');
+}
+
+#main-conten{
+	margin: 0 auto;
+}
+
+h1 {
+	color: #7a2e40;
+	margin: 0 0 10px;
+	padding-bottom: 10px;
+	font: normal 17px Georgia, serif;
+	border-bottom: 1px solid #efece7;
+}
+
+/*Global Styling*/
+a:visited, a:link {
+	color: #a43b55;
+	text-decoration: underline;
+	background: none
+	
+}
+
+a:hover{
+	color:#a43b55;
+	text-decoration: none;
+	background:none;
+	
+}
+
+#logo {
+	margin-bottom: 20px;
+	font: normal 18px Georgia, serif;
+	color: #fa7393;
+}
+.box {
+	background: #f7f7f7;
+	border: 1px solid #f0e9eb;
+	padding: 15px;
+}
+
+
+footer{
+	width: 900px;
+	height:	30px;
+	background-color: gray;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+div.code {
+	width:auto;
+	background-color:#ffffff;
+	padding:4px;
+	padding-left:7px;
+	border-left:4px solid #DDDAAA;
+	font-size:14px;
+	font-family:Consolas,"courier new";
+	border-radius:4px;
+}

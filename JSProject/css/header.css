@@ -1,0 +1,39 @@
+body {
+    background-image: url("../images/headerImage.jpg");
+	background-size:   cover; 
+    background-repeat: no-repeat;
+	background-position: top;
+	background-color: white; 
+	font: normal 12px/1.6em Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	
+} 
+
+h1 {
+	color: #7a2e40;
+	margin: 0 0 10px;
+	padding-bottom: 10px;
+	font: normal 17px Georgia, serif;
+	border-bottom: 1px solid #efece7;
+}
+
+table, th, td {
+    border: 0px solid black;
+    
+	
+}
+
+/*Global Styling*/
+a:visited, a:link {
+	color: #FFFFFF;
+	text-decoration: underline;
+	background: none
+}
+
+a:hover{
+	color:#a43b55;
+	text-decoration: none;
+	background:none;
+}

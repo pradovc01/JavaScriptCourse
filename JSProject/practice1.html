@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/src/practice1.js"></script>
+		<link href="css/main.css" rel="stylesheet" type= "text/css">
+		<title> JavaScript Course</title>
+		<meta charset="utf-8"/>
+	</head>
+	
+	<body>
+	<div id= "wrapper">
+		<div id = "main-content">
+			<div id = "box">
+				<h1>Practice 1</h1>
+				<p>In order to apply what we saw so far, create a function that given N arguments (numbers), calculates</p>
+				<p>Max Number</p>
+				<p>Min Number</p>
+				<p>Average</p>
+				<p>Sum</p>
+				<p>Note: the code is available on following path: js/src/practice1.js </p>
+				<form method="post" name="test" action="practice1.html" id ="form1" >				
+					 <table border="0" cellpadding="0" cellspacing="0" width="60%,500,*" height="60%,300,*">
+						<tr>							
+							<td>
+							<div class="code notranslate">
+								var doOperations = function(){ <br>
+								max = 0;<br>
+								min = arguments[arguments.length-1];<br>
+								sum = 0;<br>
+								var numbers= arguments;<br>
+								var getMax =  function(nums, index){ <br>
+									var currentNumber =  nums[index];<br>	
+									if (currentNumber>max) <br>
+										max= currentNumber;<br>
+									if (index == 0)<br>
+										return max;<br>
+									return getMax(nums,index-1);<br>
+								};<br>
+								var getMin =  function(nums,index){<br>
+									var currentNumberArgument= nums[index];<br>
+									if(currentNumberArgument &lt; min)<br>
+									min=nums[index];<br>
+									if(index==0)<br>
+										return min;	<br>		
+									return getMin(nums,index-1) <br>
+								}; <br>
+								var getSum =  function(nums,index){	<br>	
+									var currentNumberSum = nums[index]; <br>		
+									sum = sum + currentNumberSum; <br>
+									if(index == 0) <br>
+									return sum;	<br>	
+									return getSum(nums,index-1); <br>
+								}; <br>
+								var average =parseInt(getSum(numbers, numbers.length-1)/numbers.length); <br>
+								console.log('Max is ', getMax(numbers, numbers.length-1));	<br>
+								console.log('Min is ', getMin(numbers, numbers.length-2));	<br>
+								console.log('Average is ', average); <br>
+								console.log('Sum is ', sum);<br>
+								};<br>
+							
+							</div>
+							
+							</td>
+						</tr>						
+				</table>
+			</form>
+			<p> Results when <b> N= 3 </b></p>
+			<p> <img src="images/resultsPractice1.jpg" alt="Results practice 1" ></p>
+			</div> <!-- End box content-->
+			
+		</div> <!-- End main content-->
+		<footer> Copyright &copy 2014
+		</footer>
+	</div><!-- end div wrapper-->
+	</body>
+</html>
