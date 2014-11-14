@@ -1,4 +1,4 @@
-/*1.  Verify information (email& fullname) about user is getting correctly*/
+
 var frisby = require ('frisby')
 frisby.globalSetup({
 	request:{

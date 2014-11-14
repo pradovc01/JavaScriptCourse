@@ -1,4 +1,4 @@
-/*1.  Verify all Project are getting*/
+
 var frisby = require ('frisby')
 frisby.globalSetup({
 	request:{

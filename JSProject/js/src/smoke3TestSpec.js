@@ -1,4 +1,4 @@
-/*2.  Verify all items are getting*/
+
 var frisby = require ('frisby')
 frisby.globalSetup({
 	request:{
