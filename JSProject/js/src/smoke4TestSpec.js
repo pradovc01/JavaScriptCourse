@@ -9,8 +9,8 @@ frisby.globalSetup({
 			}
 	}
 )
-frisby.create('Get information from user')
-	.get('https://todo.ly/api/user.json')	
+frisby.create('Get List of Filters')
+	.get('https://todo.ly/api/filters.json')		
 		.inspectJSON()
 		.expectStatus(200)
 .toss()

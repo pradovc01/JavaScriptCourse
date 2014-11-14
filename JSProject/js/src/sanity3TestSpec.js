@@ -10,14 +10,13 @@ frisby.globalSetup({
 	}
 )
 
-var JSONValues ={
-	"Email":String,
-	"FullName":String,
-	"Id":Number
-}
-frisby.create('Get correct values from user')
-	.get('https://todo.ly/api/user.json')
+frisby.create('Verify Content and number of items about projects are returned correclty')
+	.get('https://todo.ly/api/projects.json')
 		.inspectJSON()
 		.expectStatus(200)
-		.expectJSONTypes(JSONValues)
+		.expectJSONTypes( '*',{
+			"Content":String,
+			"ItemsCount":Number
+		}
+		)
 .toss()

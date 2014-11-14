@@ -1,4 +1,4 @@
-/*1.  Verify all Project are getting*/
+/*2.  Verify all items are getting*/
 var frisby = require ('frisby')
 frisby.globalSetup({
 	request:{
@@ -9,8 +9,8 @@ frisby.globalSetup({
 			}
 	}
 )
-frisby.create('get all projects')
-	.get('https://todo.ly/api/projects.json')
+frisby.create('Get Token Authentication')
+	.get('https://todo.ly/api/authentication/token.json')		
 		.inspectJSON()
 		.expectStatus(200)
 .toss()
